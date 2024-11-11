@@ -13,3 +13,10 @@ describe('Factorial of 0 and 1', function() {
       assert.strictEqual(main.factorial(1), 1);
     });
 });
+
+describe('Factorial of negative numbers', function() {
+  it('should return undefined for negative inputs', function() {
+      assert.strictEqual(main.factorial(-1), undefined);
+      assert.strictEqual(main.factorial(-10), undefined);
+    });
+});
